@@ -1,0 +1,31 @@
+{
+  "scripts": {
+    "dev": "concurrently \"npm run dev:*\"",
+    "dev:api": "cd api && npm run dev",
+    "dev:app": "cd app && npm run dev",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint": "concurrently \"npm run lint:*\"",
+    "lint:app": "cd app && npm run lint",
+    "prepare": "husky",
+    "setup": "npm run setup:root && npm run setup:app",
+    "setup:api": "cd api && npm install",
+    "setup:app": "cd app && npm install",
+    "setup:root": "npm install",
+    "test": "concurrently \"npm run test:*\"",
+    "test:api": "cd api && npm run test",
+    "test:app": "cd app && npm run test",
+    "typecheck": "concurrently \"npm run typecheck:*\"",
+    "typecheck:api": "cd api && npm run typecheck",
+    "typecheck:app": "cd app && npm run typecheck"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "husky": "^9.0.11",
+    "prettier": "3.2.5"
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "all"
+  }
+}
