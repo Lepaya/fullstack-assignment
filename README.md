@@ -138,6 +138,16 @@ Please answer the following questions in a markdown file called **"ANSWERS.md"**
 
 5. Describe yourself using JSON.
 
+## Instructions
+
+1. Clone this repo. *Please do not fork it.*
+2. Create a private repository on your git provider and push the newly created app as it is.
+3. Create a PR for each subtask (#1.1, #1.2 and #2). Ensure each subsequent PR targets the previous one to maintain a clean diff.
+4. If you want, feel free to add extra features, but separate them into different PRs.
+5. Provide a concise one or two-line command to start your project. If any explanation is necessary, create a `HOWTO.md` file and explain how to run your solution.
+6. When you are finished, add `lepaya-code-reviewer` as a reviewer for each PR.
+7. Send an email to your HR contact informing them that you have completed your assessment.
+
 ## Final tips
 
 - Feel free to ask for clarification if something is unclear in the task
