@@ -1,7 +1,7 @@
 CREATE TABLE public.fruit (
 	id serial4 NOT NULL,
 	"name" varchar NULL,
-	kcal int4 NULL,
+    fruityvice_id int4 NULL
 );
 
 CREATE TABLE public."location" (
@@ -17,15 +17,15 @@ CREATE TABLE public.ledger (
 	"time" timestamptz NOT NULL
 );
 
-INSERT INTO public."fruit" ("name", "kcal") VALUES 
-('Lime', 20),
-('Tangerine', 47),
-('Apple', 52),
-('Mango', 60),
-('Plum', 46),
-('Pineapple', 50),
-('Kiwi', 61),
-('Pear', 57);
+INSERT INTO public."fruit" ("name", "fruityvice_id") VALUES
+('Lime', 44),
+('Tangerine', 77),
+('Apple', 6),
+('Mango', 27),
+('Plum', 71),
+('Pineapple', 10),
+('Kiwi', 665),
+('Pear', 4);
 
 INSERT INTO public."location" ("name", "headcount") VALUES 
 ('Amsterdam', 200),
