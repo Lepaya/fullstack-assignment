@@ -119,7 +119,7 @@ Where the first row represents the replenishing of apples (fruit #3), at the Ber
 
 And the second row would represent an eating of 2 pieces of apples at the Amsterdam office.
 
-> ℹ️ Parts of the database records are generated randomly, don't expect consistancy if you recreate the container volumes.
+> ℹ️ Parts of the database records are generated randomly, don't expect consistency if you recreate the container volumes.
 
 ## 4. Constraints
 
@@ -131,9 +131,9 @@ And the second row would represent an eating of 2 pieces of apples at the Amster
 
 ## 5. Delivery
 
-When you are finished, add your project to **Github** and invite `lepaya-code-reviewer` as a **collaborator**.
+When you are finished, add your project to **GitHub** and invite `lepaya-code-reviewer` as a **collaborator**.
 
-> Make sure there is a consise one or two-line command to start your project. If any explanation is necessary, please create a `HOWTO.md` file and explain how to run your solution.
+> Make sure there is a concise one or two-line command to start your project. If any explanation is necessary, please create a `HOWTO.md` file and explain how to run your solution.
 
 Email to your Lepaya HR contact informing them that you have completed your assessment.
 

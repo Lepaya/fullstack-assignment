@@ -1,7 +1,7 @@
 CREATE TABLE public.fruit (
 	id serial4 NOT NULL,
 	"name" varchar NULL,
-    fruityvice_id int4 NULL,
+    fruityvice_id int4 NULL
 );
 
 CREATE TABLE public."location" (
