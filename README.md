@@ -52,11 +52,12 @@ We envision you will probably need two endpoints to satisfy the Frontend require
 
 Having said that, you do have the full freedom to organize how many endpoints you need and however you want to organize them, as long as the frontend requirements are satisfied.
 
-You are free to use any out of the box server or any libraries you want; we'd suggest `express` or `koa`.
+You are free to use any out of the box server or any libraries you want.
 
 You **DO NOT** need to provide endpoints to get a list of office locations or available fruits. If you don't have the time or energy feel free to hardcode these lists, this will not be taken into consideration. The way you do hardcode them, will.
 
 ### 2.3. Automated Tests
+
 Ensure you provide enough automated tests to cover the key functionalities.
 
 ### 2.4. The technical questions
@@ -71,9 +72,15 @@ Please answer the following questions in a markdown file called **"ANSWERS.md"**
 
 4. Have you learned something new doing this test? If yes, describe it here.
 
-5. Describe yourself using JSON.
-
 ## 3. The Resources
+
+You will require some resources to complete your task. There is a database provided with this task and Fruityvice, a free API about fruit.
+
+### 3.1. Fruityvice
+
+[Fruityvice](https://www.fruityvice.com) is a free public API where you can get information on certain fruits, including their botanical and nutritional information.
+
+### 3.2. Provided Database
 
 The database that they use to keep track of fruit is provided to you as a PostgreSQL database defined in the `docker-compose.yml`
 
@@ -96,7 +103,7 @@ POSTGRES_PASSWORD: candidate
 It holds 3 tables
 
 - **location** - Which holds all the locations where there are offices, along with the count of people in that office
-- **fruit** - Fruits available for purchase, along with their name and caloric (kcal) value per unit.
+- **fruit** - Fruits available for purchase, along with their name and Fruityvice ID.
 - **ledger** - This table holds records of all the fruits that were purchased for an office or were eaten at the office.
 
 Records with a **negative integer** in the **amount** column would represent the number of certain fruits that were eaten at an office, while the ones with the positive amounts would represent the purchase of those fruits at the office.
@@ -108,7 +115,7 @@ Example:
 | 3        | 2           | 4     | 2018-06-09 20:00:03.629 +0200 |
 | 3        | 1           |-2     | 2017-05-09 23:33:15.233 +0200 |
 
-Where the first row represents the purchase of apples (fruit #3), at the Berlin office by purchasing 4 pieces.
+Where the first row represents the replenishing of apples (fruit #3), at the Berlin office by purchasing 4 pieces.
 
 And the second row would represent an eating of 2 pieces of apples at the Amsterdam office.
 
